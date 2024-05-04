@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -12,14 +13,22 @@ const Hero = () => {
       {/* <div className="hero-overlay bg-opacity-60"></div> */}
       <div className="hero-content">
         <div className="max-w-lg">
-          <h1 className="mb-5 text-5xl font-bold bg-gradient-to-r from-blue-600 to-white  bg-clip-text text-transparent">
+          <motion.h1
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="mb-5 text-5xl font-bold bg-gradient-to-r from-blue-600 to-white  bg-clip-text text-transparent">
             Fouad El Boustani
-          </h1>
-          <p className="mb-5">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="mb-5">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
-          </p>
+          </motion.p>
           <div className="flex items-center gap-2">
             <Link href="" target="_blank" className="btn btn-circle">
               <FaInstagram size={20} />

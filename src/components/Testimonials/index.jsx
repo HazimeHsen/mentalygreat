@@ -1,9 +1,35 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const Testimonials = () => {
+  const [ref1, inView1] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const [ref3, inView3] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const variants = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 20 },
+  };
+
   return (
     <div id="testimonials" className="row px-5 md:px-10 overflow-hidden py-10">
-      <div className="col col-lg-4 col-md-12">
+      <motion.div
+        ref={ref1}
+        initial="hidden"
+        animate={inView1 ? "visible" : "hidden"}
+        variants={variants}
+        transition={{ duration: 0.5 }}
+        className="col col-lg-4 col-md-12">
         <div className="testimonial-card-wrapper _3">
           <div className="testimonial---top-row george">
             <div className="testimonial-stats">
@@ -98,8 +124,14 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="col col-lg-4 col-md-12">
+      </motion.div>
+      <motion.div
+        ref={ref2}
+        initial="hidden"
+        animate={inView2 ? "visible" : "hidden"}
+        variants={variants}
+        transition={{ duration: 0.5 }}
+        className="col col-lg-4 col-md-12">
         <div className="testimonial-card-wrapper _3">
           <div className="testimonial---top-row steven">
             <div className="testimonial-stats">
@@ -194,8 +226,14 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="col col-lg-4 col-md-12">
+      </motion.div>
+      <motion.div
+        ref={ref3}
+        initial="hidden"
+        animate={inView3 ? "visible" : "hidden"}
+        variants={variants}
+        transition={{ duration: 0.5 }}
+        className="col col-lg-4 col-md-12">
         <div className="testimonial-card-wrapper _3">
           <div className="testimonial---top-row ben">
             <div className="testimonial-stats">
@@ -290,7 +328,7 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
