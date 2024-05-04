@@ -4,7 +4,7 @@ import { FaEye } from "react-icons/fa";
 
 const Videos = () => {
   return (
-    <div className="container mx-auto py-10">
+    <div id="protfolio" className="container mx-auto py-10">
       <h2 className="text-3xl font-bold mb-8 text-center">Protfolio</h2>
       <div className="flex justify-evenly flex-wrap gap-5">
         <div className="flex flex-col items-center justify-center gap-5 px-4">
