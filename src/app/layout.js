@@ -13,15 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <ClientOnly>
-        <body
-          className={
-            "bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 text-white"
-          }>
+      <body>
+        <ClientOnly>
           <Navbar />
           {children}
-        </body>
-      </ClientOnly>
+        </ClientOnly>
+      </body>
     </html>
   );
 }

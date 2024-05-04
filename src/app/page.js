@@ -9,7 +9,7 @@ import { InlineWidget } from "react-calendly";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 text-white">
       <Hero />
       <Services />
       <Followers />
@@ -18,6 +18,6 @@ export default function Home() {
       <div id="book">
         <InlineWidget url="https://calendly.com/hazimehussein43" />
       </div>
-    </>
+    </div>
   );
 }
