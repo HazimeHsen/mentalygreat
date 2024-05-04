@@ -3,15 +3,17 @@ import { useState, useEffect } from "react";
 import PageLoading from "./PageLoading";
 
 const ClientOnly = ({ children }) => {
-  const [hasMounted, setHasMounted] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
-    setHasMounted(true);
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timeout);
   }, []);
 
-  if (!hasMounted) return <PageLoading />;
-
-  return <>{children}</>;
+  return isLoading ? <PageLoading /> : <>{children}</>;
 };
 
 export default ClientOnly;
