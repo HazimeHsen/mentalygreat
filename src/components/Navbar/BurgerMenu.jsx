@@ -20,14 +20,14 @@ const BurgerMenu = () => {
 
   const menuVariants = {
     opened: {
-      top: 0,
+      top: "100vh",
       transition: {
         when: "beforeChildren",
         staggerChildren: 0.2,
       },
     },
     closed: {
-      top: "-100vh",
+      top: "0",
     },
   };
 
@@ -55,7 +55,7 @@ const BurgerMenu = () => {
         initial={false}
         variants={menuVariants}
         animate={controls}
-        className="fixed top-0 !z-[40] left-0 flex flex-col justify-center items-center h-screen w-screen text-white bg-primary/90">
+        className="fixed top-0 !z-[40] left-0 flex flex-col justify-center items-center -translate-y-[100vh] h-screen w-screen text-white bg-primary/90">
         {links.map((link, index) => (
           <motion.div
             onClick={() => setIsOpen(false)}
