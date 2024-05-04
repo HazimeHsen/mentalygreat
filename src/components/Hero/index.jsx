@@ -10,26 +10,17 @@ const Hero = () => {
       style={{
         backgroundImage: "url(/hero.jpg)",
       }}>
-      {/* <div className="hero-overlay bg-opacity-60"></div> */}
       <div className="hero-content">
         <div className="max-w-lg">
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="mb-5 text-5xl font-bold bg-gradient-to-r from-blue-600 to-white  bg-clip-text text-transparent">
+          <h1 className="fade-in mb-5 text-5xl font-bold bg-gradient-to-r from-blue-600 to-white bg-clip-text text-transparent">
             Fouad El Boustani
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="mb-5">
+          </h1>
+          <p className="fade-in mb-5">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
-          </motion.p>
-          <div className="flex items-center gap-2">
+          </p>
+          <div className="flex fade-in items-center gap-2">
             <Link href="" target="_blank" className="btn btn-circle">
               <FaInstagram size={20} />
             </Link>
