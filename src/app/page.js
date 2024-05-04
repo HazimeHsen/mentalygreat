@@ -15,7 +15,9 @@ export default function Home() {
       <Followers />
       <Testimonials />
       <Videos />
-      <InlineWidget url="https://calendly.com/hazimehussein43" />
+      <div id="book">
+        <InlineWidget url="https://calendly.com/hazimehussein43" />
+      </div>
     </>
   );
 }

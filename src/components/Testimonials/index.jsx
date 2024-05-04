@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonials = () => {
   return (
-    <div className="row px-5 md:px-10 overflow-hidden py-10">
+    <div id="testimonials" className="row px-5 md:px-10 overflow-hidden py-10">
       <div className="col col-lg-4 col-md-12">
         <div className="testimonial-card-wrapper _3">
           <div className="testimonial---top-row george">
