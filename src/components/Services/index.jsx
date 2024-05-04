@@ -16,6 +16,10 @@ const Services = () => {
     triggerOnce: true,
     threshold: 0.5,
   });
+  const [ref4, inView4] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
 
   const variants = {
     visible: { opacity: 1, y: 0 },
@@ -23,17 +27,22 @@ const Services = () => {
   };
 
   return (
-    <div
-      id="services"
-      className="section relative pt-20 pb-8 md:pt-16 md:pb-0"
-    >
+    <div id="services" className="section relative pt-20 pb-8 md:pt-16 md:pb-0">
       <div className="md:container xl:max-w-6xl mx-auto px-4">
-        <header className="text-center mx-auto mb-12 lg:px-20">
-          <h2 className="text-2xl leading-normal mb-2 font-bold">What We Offer</h2>
+        <motion.div
+          ref={ref4}
+          initial="hidden"
+          animate={inView4 ? "visible" : "hidden"}
+          variants={variants}
+          transition={{ duration: 0.5 }}
+          className="text-center mx-auto mb-12 lg:px-20">
+          <h2 className="text-2xl leading-normal mb-2 font-bold">
+            What We Offer
+          </h2>
           <p className="text-gray-300 leading-relaxed font-light text-xl mx-auto pb-2">
             Save time managing advertising &amp; Content for your business.
           </p>
-        </header>
+        </motion.div>
         <div className="flex flex-wrap flex-row text-center">
           <motion.div
             ref={ref1}
@@ -41,8 +50,7 @@ const Services = () => {
             initial="hidden"
             animate={inView1 ? "visible" : "hidden"}
             variants={variants}
-            transition={{ duration: 0.5 }}
-          >
+            transition={{ duration: 0.5 }}>
             <div className="py-8 px-12 mb-12 bg-gray-50/60 border-2 border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 rounded-xl shadow-lg ">
               <div className="inline-block text-gray-900 mb-4">
                 <div className="p-2 rounded-full border bg-gray-100">
@@ -53,8 +61,8 @@ const Services = () => {
                 Grow Your Social Media
               </h3>
               <p className="text-gray-500">
-                Increase your social media following and engagement to earn
-                more money.
+                Increase your social media following and engagement to earn more
+                money.
               </p>
             </div>
           </motion.div>
@@ -64,8 +72,7 @@ const Services = () => {
             initial="hidden"
             animate={inView2 ? "visible" : "hidden"}
             variants={variants}
-            transition={{ duration: 0.5 }}
-          >
+            transition={{ duration: 0.5 }}>
             <div className="py-8 px-12 mb-12 bg-gray-50/60 border-2 border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 rounded-xl shadow-lg ">
               <div className="inline-block text-gray-900 mb-4">
                 <div className="p-2 rounded-full border bg-gray-100">
@@ -86,8 +93,7 @@ const Services = () => {
             initial="hidden"
             animate={inView3 ? "visible" : "hidden"}
             variants={variants}
-            transition={{ duration: 0.5 }}
-          >
+            transition={{ duration: 0.5 }}>
             <div className="py-8 px-12 mb-12 bg-gray-50/60 border-2 border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 rounded-xl shadow-lg ">
               <div className="inline-block text-gray-900 mb-4">
                 <div className="p-2 rounded-full border bg-gray-100">
