@@ -41,7 +41,7 @@ const Chart = () => {
       },
       stroke: {
         width: [5], // Width of the stroke (line thickness)
-        // colors: ["#000"], // Colors of the stroke
+        colors: ["#000"], // Colors of the stroke
       },
       title: {
         text: "Tiktok Followers", // Title of the chart
@@ -67,8 +67,18 @@ const Chart = () => {
       xaxis: {
         categories: [
           // X-axis categories (labels)
-          "01 Jan", "02 Jan", "03 Jan", "04 Jan", "05 Jan", "06 Jan", "07 Jan",
-          "08 Jan", "09 Jan", "10 Jan", "11 Jan", "12 Jan",
+          "01 Jan",
+          "02 Jan",
+          "03 Jan",
+          "04 Jan",
+          "05 Jan",
+          "06 Jan",
+          "07 Jan",
+          "08 Jan",
+          "09 Jan",
+          "10 Jan",
+          "11 Jan",
+          "12 Jan",
         ],
       },
       tooltip: {

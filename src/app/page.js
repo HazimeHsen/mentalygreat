@@ -9,7 +9,7 @@ import { InlineWidget } from "react-calendly";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 text-white">
+    <div>
       <Hero />
       <Services />
       <Followers />

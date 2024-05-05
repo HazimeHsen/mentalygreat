@@ -39,7 +39,7 @@ const Services = () => {
           <h2 className="text-2xl leading-normal mb-2 font-bold">
             What We Offer
           </h2>
-          <p className="text-gray-300 leading-relaxed font-light text-xl mx-auto pb-2">
+          <p className="text-gray-400 leading-relaxed font-light text-xl mx-auto pb-2">
             Save time managing advertising &amp; Content for your business.
           </p>
         </motion.div>
