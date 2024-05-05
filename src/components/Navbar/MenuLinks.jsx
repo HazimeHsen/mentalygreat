@@ -21,7 +21,7 @@ const MenuLinks = () => {
           transition={{ duration: 0.3, delay: index * 0.1 + 0.3 }}>
           <a
             href={link.href}
-            className="menu__link flex items-center text-black hover:!text-primary transition-colors duration-200 gap-2 w-fit pr-1">
+            className="menu__link flex items-center text-black hover:opacity-85 transition-opacity duration-200 gap-2 w-fit pr-1">
             {link.title}
           </a>
         </motion.div>
