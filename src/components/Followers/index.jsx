@@ -29,7 +29,7 @@ const Followers = () => {
         variants={variants}
         transition={{ duration: 0.5 }}
         ref={chartRef}>
-        <Chart />
+        {typeof window !== "undefined" ? <Chart /> : null}
       </motion.div>
     </div>
   );
