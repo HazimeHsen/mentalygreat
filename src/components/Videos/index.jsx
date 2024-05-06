@@ -52,7 +52,7 @@ const Videos = () => {
           </div>
           <div className="flex items-center gap-2 text-sm font-bold bg-gray-100 text-gray-500 px-4 py-2 rounded-full">
             <FaEye />
-            <span className="text-xs">10m Views</span>
+            <span className="text-xs">700k Views</span>
           </div>
         </motion.div>
         <motion.div
@@ -81,7 +81,7 @@ const Videos = () => {
           </div>
           <div className="flex items-center gap-2 text-sm font-bold bg-gray-100 text-gray-500 px-4 py-2 rounded-full">
             <FaEye />
-            <span className="text-xs">10m Views</span>
+            <span className="text-xs">4.5m Views</span>
           </div>
         </motion.div>
         <motion.div
@@ -110,7 +110,7 @@ const Videos = () => {
           </div>
           <div className="flex items-center gap-2 text-sm font-bold bg-gray-100 text-gray-500 px-4 py-2 rounded-full">
             <FaEye />
-            <span className="text-xs">10m Views</span>
+            <span className="text-xs">900k Views</span>
           </div>
         </motion.div>
       </div>

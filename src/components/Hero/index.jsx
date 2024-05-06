@@ -30,18 +30,27 @@ const Hero = () => {
             create viral short-form videos.
           </p>
           <div className="flex fade-in md:justify-start justify-center items-center gap-2">
-            <Link href="" target="_blank" className="btn btn-circle">
+            <Link
+              href="https://www.tiktok.com/@mentallygreat?_t=8m84R6SfZCR&_r=1"
+              target="_blank"
+              className="btn btn-circle">
               <FaTiktok size={20} />
             </Link>
-            <Link href="" target="_blank" className="btn btn-circle">
+            <Link
+              href="https://www.instagram.com/mentallygreat?igsh=aWk1OGY4bWg0ZnIx"
+              target="_blank"
+              className="btn btn-circle">
               <FaInstagram size={20} />
             </Link>
-            <Link href="" target="_blank" className="btn btn-circle">
+            <Link
+              href="https://youtube.com/@mentallygreat?si=-Zf5LaYgvjiiBfaH"
+              target="_blank"
+              className="btn btn-circle">
               <FaYoutube size={20} />
             </Link>
           </div>
         </div>
-        <div className="mockup-phone !m-0 min-w-[250px]">
+        <div className="fade-in-phone mockup-phone !m-0 min-w-[250px]">
           <div className="camera"></div>
           <div className="display">
             <div className="h-[500px] relative">

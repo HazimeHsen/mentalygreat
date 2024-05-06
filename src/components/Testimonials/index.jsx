@@ -1,6 +1,8 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import { FaInstagram, FaTiktok } from "react-icons/fa";
+import Link from "next/link";
 
 const Testimonials = () => {
   const [ref1, inView1] = useInView({
@@ -97,7 +99,7 @@ const Testimonials = () => {
                 </div>
                 <div className="verified-name-wrapper">
                   <div className="caption---xxsmall opacity---80">
-                    @disisjorj
+                    @patburgener
                   </div>
                   <svg
                     className="verified-icon"
@@ -116,7 +118,12 @@ const Testimonials = () => {
                 </div>
               </div>
               <div className="community-size text---no-wrap scale-90 ben  mt-1 -ml-2 ">
-                80.3K community
+                <Link
+                  target="_blank"
+                  className="flex items-center gap-1"
+                  href={"https://www.instagram.com/patburgener/"}>
+                  <FaInstagram size={20} /> <span>Instagram</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -215,7 +222,14 @@ const Testimonials = () => {
                 </div>
               </div>
               <div className="community-size text---no-wrap scale-90 ben  mt-1 -ml-2 ">
-                80.3K community
+                <Link
+                  target="_blank"
+                  className="flex items-center gap-1"
+                  href={
+                    "https://www.tiktok.com/@amireidofficial?_t=8m83WVtEceW&_r=1"
+                  }>
+                  <FaTiktok size={20} /> <span>TikTok</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -314,7 +328,12 @@ const Testimonials = () => {
                 </div>
               </div>
               <div className="community-size text---no-wrap scale-90 ben  mt-1 -ml-2 ">
-                80.3K community
+                <Link
+                  target="_blank"
+                  className="flex items-center gap-1"
+                  href={"https://www.instagram.com/sarah_atcho"}>
+                  <FaInstagram size={20} /> <span>Instagram</span>
+                </Link>
               </div>
             </div>
           </div>

@@ -167,7 +167,7 @@ const Chart = () => {
   };
 
   return (
-    <div className="text-black max-w-6xl mx-auto">
+    <div className="text-black mx-auto">
       <div id="chart">
         {isReactApexChartLoaded && (
           <ReactApexChart
