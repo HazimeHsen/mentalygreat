@@ -1,3 +1,4 @@
+"use client";
 import Followers from "@/components/Followers";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
