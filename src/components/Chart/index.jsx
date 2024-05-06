@@ -6,18 +6,16 @@ const Chart = () => {
   const [isReactApexChartLoaded, setReactApexChartLoaded] = useState(false);
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    import("react-apexcharts")
-      .then((module) => {
-        setReactApexChartLoaded(true);
-      })
-      .catch((error) =>
-        console.error("Error importing ReactApexChart:", error)
-      );
+    if (typeof window !== "undefined") {
+      import("react-apexcharts")
+        .then((module) => {
+          setReactApexChartLoaded(true);
+        })
+        .catch((error) =>
+          console.error("Error importing ReactApexChart:", error)
+        );
+    }
   }, []);
-
-  if (typeof window === "undefined") return null;
 
   const state = {
     series: [
