@@ -7,9 +7,7 @@ const BurgerButton = ({ isOpen, setIsOpen }) => {
   };
 
   return (
-    <div
-      className={`burger ${isOpen ? "active" : ""} stroke-black`}
-      onClick={handleToggle}>
+    <div className={`burger ${isOpen ? "active" : ""} `} onClick={handleToggle}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="70"

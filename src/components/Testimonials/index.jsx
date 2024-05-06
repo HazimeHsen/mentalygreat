@@ -35,12 +35,12 @@ const Testimonials = () => {
             <div className="testimonial-stats">
               <div className="stat-wrapper _1" style={{ opacity: 1 }}>
                 <div className="display-text---small">from</div>
-                <div className="h5 text-colour---orange">€0</div>
-                <div className="display-text---small">
+                <div className="h5 text-colour---orange">59k</div>
+                {/* <div className="display-text---small">
                   Earnings
                   <br />
                   per month
-                </div>
+                </div> */}
               </div>
               <svg
                 className="testimonial-arrow"
@@ -63,11 +63,8 @@ const Testimonials = () => {
               </svg>
               <div className="stat-wrapper right" style={{ opacity: 1 }}>
                 <div className="display-text---small">to over</div>
-                <div className="h5 text-colour---orange">€10K+</div>
-                <div className="display-text---small">
-                  Earnings <br />
-                  per month
-                </div>
+                <div className="h5 text-colour---orange">172k+</div>
+                <div className="display-text---small">in 5 months</div>
               </div>
             </div>
           </div>
@@ -93,10 +90,10 @@ const Testimonials = () => {
             <div className="testimonial-details-wrapper flex-col !gap-2  !items-start ">
               <div className="testimonial---name-wrapper">
                 <div className="display-text---medium text---no-wrap">
-                  <strong>George Sidiropoulos</strong>
+                  <strong>Pat Burgener</strong>
                 </div>
                 <div className="caption---xxsmall opacity---80">
-                  CONTENT CREATOR/ARTIST
+                  Olympic Snowboarder
                 </div>
                 <div className="verified-name-wrapper">
                   <div className="caption---xxsmall opacity---80">
@@ -137,12 +134,12 @@ const Testimonials = () => {
             <div className="testimonial-stats">
               <div className="stat-wrapper _1" style={{ opacity: 1 }}>
                 <div className="display-text---small">from</div>
-                <div className="h5 text-colour---orange">€0</div>
-                <div className="display-text---small">
+                <div className="h5 text-colour---orange">0</div>
+                {/* <div className="display-text---small">
                   Earnings
                   <br />
                   per month
-                </div>
+                </div> */}
               </div>
               <svg
                 className="testimonial-arrow"
@@ -165,11 +162,8 @@ const Testimonials = () => {
               </svg>
               <div className="stat-wrapper right" style={{ opacity: 1 }}>
                 <div className="display-text---small">to over</div>
-                <div className="h5 text-colour---orange">€10K+</div>
-                <div className="display-text---small">
-                  Earnings <br />
-                  per month
-                </div>
+                <div className="h5 text-colour---orange">100K+</div>
+                <div className="display-text---small">in 5 months</div>
               </div>
             </div>
           </div>
@@ -195,10 +189,10 @@ const Testimonials = () => {
             <div className="testimonial-details-wrapper flex-col !gap-2  !items-start ">
               <div className="testimonial---name-wrapper">
                 <div className="display-text---medium text---no-wrap">
-                  <strong>steven Sidiropoulos</strong>
+                  <strong>Amir Eid</strong>
                 </div>
                 <div className="caption---xxsmall opacity---80">
-                  CONTENT CREATOR/ARTIST
+                  Pro Athlete Trainers{" "}
                 </div>
                 <div className="verified-name-wrapper">
                   <div className="caption---xxsmall opacity---80">
@@ -239,12 +233,12 @@ const Testimonials = () => {
             <div className="testimonial-stats">
               <div className="stat-wrapper _1" style={{ opacity: 1 }}>
                 <div className="display-text---small">from</div>
-                <div className="h5 text-colour---orange">€0</div>
-                <div className="display-text---small">
+                <div className="h5 text-colour---orange">25k</div>
+                {/* <div className="display-text---small">
                   Earnings
                   <br />
                   per month
-                </div>
+                </div> */}
               </div>
               <svg
                 className="testimonial-arrow"
@@ -267,11 +261,8 @@ const Testimonials = () => {
               </svg>
               <div className="stat-wrapper right" style={{ opacity: 1 }}>
                 <div className="display-text---small">to over</div>
-                <div className="h5 text-colour---orange">€10K+</div>
-                <div className="display-text---small">
-                  Earnings <br />
-                  per month
-                </div>
+                <div className="h5 text-colour---orange">100K+</div>
+                <div className="display-text---small">in 4 months</div>
               </div>
             </div>
           </div>
@@ -297,10 +288,10 @@ const Testimonials = () => {
             <div className="testimonial-details-wrapper flex-col !gap-2  !items-start ">
               <div className="testimonial---name-wrapper">
                 <div className="display-text---medium text---no-wrap">
-                  <strong>Ben Sidiropoulos</strong>
+                  <strong>Sarah Atcho</strong>
                 </div>
                 <div className="caption---xxsmall opacity---80">
-                  CONTENT CREATOR/ARTIST
+                  Olympic sprinter{" "}
                 </div>
                 <div className="verified-name-wrapper">
                   <div className="caption---xxsmall opacity---80">

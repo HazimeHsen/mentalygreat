@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { FaEye } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
@@ -25,7 +24,7 @@ const Videos = () => {
 
   return (
     <div id="protfolio" className="container mx-auto py-10">
-      <h2 className="text-3xl font-bold mb-8 text-center">Protfolio</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center">Portfolio</h2>
       <div className="flex justify-evenly flex-wrap gap-5">
         <motion.div
           ref={ref1}
@@ -38,7 +37,16 @@ const Videos = () => {
             <div className="camera"></div>
             <div className="display">
               <div className="h-[500px] relative">
-                <Image alt="" src="/insta1.jpg" quality={100} fill />
+                {inView1 && (
+                  <iframe
+                    src="https://www.instagram.com/reel/CpLHsK6jpIh/embed/"
+                    title="Instagram Video"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    scrolling="no"
+                    allowFullScreen></iframe>
+                )}
               </div>
             </div>
           </div>
@@ -58,7 +66,16 @@ const Videos = () => {
             <div className="camera"></div>
             <div className="display">
               <div className="h-[500px] relative">
-                <Image alt="" src="/insta1.jpg" quality={100} fill />
+                {inView2 && (
+                  <iframe
+                    src="https://www.instagram.com/reel/Ck_ZXaJqANM/embed/"
+                    title="Instagram Video"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    scrolling="no"
+                    allowFullScreen></iframe>
+                )}
               </div>
             </div>
           </div>
@@ -78,7 +95,16 @@ const Videos = () => {
             <div className="camera"></div>
             <div className="display">
               <div className="h-[500px] relative">
-                <Image alt="" src="/insta1.jpg" quality={100} fill />
+                <video
+                  src="/tik.mp4"
+                  title="TikTok Video"
+                  width="100%"
+                  height="100%"
+                  autoPlay={false}
+                  className="w-full"
+                  frameBorder="0"
+                  scrolling="no"
+                  controls></video>
               </div>
             </div>
           </div>

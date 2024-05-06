@@ -1,7 +1,7 @@
 import React from "react";
 
 const Logo = () => {
-  return <div className="text-lg font-semibold text-black">Logo</div>;
+  return <div className="text-xl font-semibold">Logo</div>;
 };
 
 export default Logo;

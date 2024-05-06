@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ReactApexChart from "react-apexcharts";
 
 const Chart = () => {
   const [isReactApexChartLoaded, setReactApexChartLoaded] = useState(false);
@@ -15,8 +16,6 @@ const Chart = () => {
 
   // Ensure the component is only rendered on the client-side
   if (typeof window === "undefined") return null;
-
-  const ReactApexChart = require("react-apexcharts").default;
 
   const state = {
     series: [
@@ -41,7 +40,7 @@ const Chart = () => {
       },
       stroke: {
         width: [5], // Width of the stroke (line thickness)
-        colors: ["#000"], // Colors of the stroke
+        // colors: ["#000"], // Colors of the stroke
       },
       title: {
         text: "Tiktok Followers", // Title of the chart
@@ -110,14 +109,65 @@ const Chart = () => {
       grid: {
         borderColor: "#f1f1f1", // Color of the grid border
       },
-      toolbar: {
-        show: false, // Whether to show the toolbar
+      annotations: {
+        xaxis: [
+          {
+            x: "07 Jan",
+            strokeDashArray: 0,
+            borderColor: "#775DD0",
+            label: {
+              borderColor: "#775DD0",
+              style: {
+                color: "#fff",
+                background: "#775DD0",
+              },
+              text: "Start",
+            },
+          },
+          {
+            x: "12 Jan",
+            strokeDashArray: 0,
+            borderColor: "#775DD0",
+            label: {
+              borderColor: "#775DD0",
+              style: {
+                color: "#fff",
+                background: "#775DD0",
+              },
+              text: "Now",
+            },
+          },
+        ],
+
+        points: [
+          {
+            x: "07 Jan",
+            y: 450000,
+            marker: {
+              size: 8,
+              fillColor: "#fff",
+              strokeColor: "red",
+              radius: 2,
+              cssClass: "apexcharts-custom-class",
+            },
+            label: {
+              borderColor: "#FF4560",
+              offsetY: 0,
+              style: {
+                color: "#fff",
+                background: "#FF4560",
+              },
+
+              text: "Start Using Viral System",
+            },
+          },
+        ],
       },
     },
   };
 
   return (
-    <div className="text-black">
+    <div className="text-black max-w-6xl mx-auto">
       <div id="chart">
         {isReactApexChartLoaded && (
           <ReactApexChart

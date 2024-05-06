@@ -20,6 +20,10 @@ const Services = () => {
     triggerOnce: true,
     threshold: 0.5,
   });
+  const [ref5, inView5] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
 
   const variants = {
     visible: { opacity: 1, y: 0 },
@@ -40,10 +44,11 @@ const Services = () => {
             What We Offer
           </h2>
           <p className="text-gray-400 leading-relaxed font-light text-xl mx-auto pb-2">
-            Save time managing advertising &amp; Content for your business.
+            We take care of the A-Z in creating your viral videos, you’ll just
+            need to film.
           </p>
         </motion.div>
-        <div className="flex flex-wrap flex-row text-center">
+        <div className="flex flex-wrap justify-center flex-row text-center">
           <motion.div
             ref={ref1}
             className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6"
@@ -58,11 +63,11 @@ const Services = () => {
                 </div>{" "}
               </div>
               <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                Grow Your Social Media
+                Viral Strategy{" "}
               </h3>
               <p className="text-gray-500">
-                Increase your social media following and engagement to earn more
-                money.
+                Creating optimal results, by matching your unique potential,
+                with a tailored content strategy.
               </p>
             </div>
           </motion.div>
@@ -80,10 +85,11 @@ const Services = () => {
                 </div>
               </div>
               <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                Social Content
+                Viral scripting{" "}
               </h3>
               <p className="text-gray-500">
-                Create engaging content to attract more followers and views.
+                Optimizing the best content ideas, into powerful scripts, that
+                drive high-retention (i.e creates organic virality){" "}
               </p>
             </div>
           </motion.div>
@@ -101,11 +107,32 @@ const Services = () => {
                 </div>
               </div>
               <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                Monetization Strategies
+                Viral Editing{" "}
               </h3>
               <p className="text-gray-500">
-                Learn effective strategies to monetize your social media
-                presence.
+                Using viral editing techniques to best amplify your message.{" "}
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            ref={ref5}
+            className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6"
+            initial="hidden"
+            animate={inView5 ? "visible" : "hidden"}
+            variants={variants}
+            transition={{ duration: 0.5 }}>
+            <div className="py-8 px-12 mb-12 bg-gray-50/60 border-2 border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 rounded-xl shadow-lg ">
+              <div className="inline-block text-gray-900 mb-4">
+                <div className="p-2 rounded-full border bg-gray-100">
+                  <Image alt="" src={"/icon-4.gif"} width={50} height={50} />
+                </div>
+              </div>
+              <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
+                Social media management{" "}
+              </h3>
+              <p className="text-gray-500">
+                Save yourelf the headache, our team will manage all posting,
+                titles, hashtags, etc …{" "}
               </p>
             </div>
           </motion.div>

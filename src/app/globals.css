@@ -3903,9 +3903,8 @@ a {
 }
 
 .testimonial---top-row {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(https://assets-global.website-files.com/6595333ec034c7e8ad17402a/6596f733d056e1c6e032ed14_steven%20zuber.webp);
-  background-position: 0 0, 50%;
+  background-image: url(/tes2.jpeg);
+  background-position: center top;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
   background-attachment: scroll, scroll;
@@ -3918,7 +3917,7 @@ a {
 }
 
 .testimonial---top-row.ben {
-  background-image: url(https://assets-global.website-files.com/6595333ec034c7e8ad17402a/6596f7332ce3d8d53f55ee1b_ben%20hargreaves.webp);
+  background-image: url(/tes3.jpg);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3926,7 +3925,7 @@ a {
 }
 
 .testimonial---top-row.george {
-  background-image: url(https://assets-global.website-files.com/6595333ec034c7e8ad17402a/6596f733095192bd36eda9a9_George%20Sidiropoulos.webp);
+  background-image: url(/tes1.png);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
