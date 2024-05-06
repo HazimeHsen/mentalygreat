@@ -24,7 +24,7 @@ function Navbar() {
 
   return (
     <div
-      className={`fixed top-0 left-0 z-50 w-full flex items-center justify-between pr-4 pl-6 md:px-8 py-2 md:py-6 ${
+      className={`fixed top-0 left-0 z-[100] w-full flex items-center justify-between pr-4 pl-6 md:px-8 py-2 md:py-6 ${
         isGlassy
           ? "bg-white bg-opacity-50 shadow-lg backdrop-blur-lg stroke-black text-black"
           : "bg-transparent text-white stroke-white"
