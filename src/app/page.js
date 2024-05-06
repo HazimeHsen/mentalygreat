@@ -1,4 +1,3 @@
-"use client";
 import Followers from "@/components/Followers";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
@@ -8,6 +7,9 @@ import Image from "next/image";
 import { InlineWidget } from "react-calendly";
 
 export default function Home() {
+  if (typeof window === "undefined") {
+    return null;
+  }
   return (
     <div>
       <Hero />
