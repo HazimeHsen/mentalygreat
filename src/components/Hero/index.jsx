@@ -7,7 +7,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div
-      className="bg-cover bg-top bg-no-repeat pt-20 md:pt-14 md:mb-0 mb-[500px] md:text-start text-center md:px-14 lg:px-20 px-5 flex justify-center items-center min-h-screen text-white"
+      className="bg-cover bg-top bg-no-repeat pt-20 md:pt-14 md:mb-0 mb-[520px] md:text-start text-center md:px-14 lg:px-20 px-5 flex justify-center items-center min-h-screen text-white"
       style={{
         backgroundImage: "url(/hero.png)",
       }}>
