@@ -1,6 +1,7 @@
 "use client";
-import { useEffect, useState } from "react";
+import React from "react";
 import Chart from "../Chart";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -15,20 +16,10 @@ const Followers = () => {
     threshold: 0.5,
   });
 
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
   const variants = {
     visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: 20 },
   };
-
-  if (!isClient) {
-    return null; // Don't render on the server-side
-  }
 
   return (
     <div className="flex items-center lg:flex-row flex-col md:px-14 lg:px-20 px-2 gap-10 py-10 bg-white">
