@@ -7,13 +7,13 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div
-      className="bg-cover bg-top bg-no-repeat pt-20 md:pt-14 md:text-start text-center md:px-14 lg:px-20 px-5 flex justify-center items-center min-h-screen text-white"
+      className="bg-cover bg-top bg-no-repeat pt-20 md:pt-14 md:mb-0 mb-[430px] md:text-start text-center md:px-14 lg:px-20 px-5 flex justify-center items-center min-h-screen text-white"
       style={{
         backgroundImage: "url(/hero.png)",
       }}>
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
-      <div className="hero-content md:justify-between justify-center flex md:flex-row flex-col items-center w-full">
+      <div className="hero-content md:justify-between justify-center md:relative md:top-0 md:left-0 absolute top-56 left-0 flex md:flex-row flex-col items-center w-full">
         <div className="">
           <h1 className="fade-in mb-5 text-3xl md:text-5xl font-bold ">
             Fouad El Boustani
@@ -50,14 +50,16 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="fade-in-phone mockup-phone !m-0 min-w-[250px]">
+        <Link
+          href={"https://www.tiktok.com/@mentallygreat?_t=8m84R6SfZCR&_r=1"}
+          className="fade-in-phone mockup-phone !m-0 min-w-[250px]">
           <div className="camera"></div>
           <div className="display">
             <div className="h-[500px] relative">
               <Image alt="" src="/insta1.jpg" quality={100} fill />
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

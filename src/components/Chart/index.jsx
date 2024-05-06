@@ -22,8 +22,8 @@ const Chart = () => {
       {
         name: "Session Duration",
         data: [
-          8000, 12000, 50000, 120000, 170000, 250000, 450000, 600000, 1200000,
-          1800000, 2000000, 2300000,
+          120000, 170000, 250000, 300000, 400000, 600000, 1000000, 2000000,
+          2300000,
         ],
       },
     ],
@@ -65,19 +65,15 @@ const Chart = () => {
       },
       xaxis: {
         categories: [
-          // X-axis categories (labels)
-          "01 Jan",
+          "01 Sep",
+          "01 Oct",
+          "01 Nov",
+          "01 Dec",
           "02 Jan",
-          "03 Jan",
-          "04 Jan",
-          "05 Jan",
-          "06 Jan",
-          "07 Jan",
-          "08 Jan",
-          "09 Jan",
-          "10 Jan",
-          "11 Jan",
-          "12 Jan",
+          "14 Feb",
+          "02 Mar",
+          "02 Apr",
+          "06 May",
         ],
       },
       tooltip: {
@@ -112,7 +108,7 @@ const Chart = () => {
       annotations: {
         xaxis: [
           {
-            x: "07 Jan",
+            x: "14 Feb",
             strokeDashArray: 0,
             borderColor: "#775DD0",
             label: {
@@ -125,7 +121,7 @@ const Chart = () => {
             },
           },
           {
-            x: "12 Jan",
+            x: "06 May",
             strokeDashArray: 0,
             borderColor: "#775DD0",
             label: {
@@ -141,8 +137,8 @@ const Chart = () => {
 
         points: [
           {
-            x: "07 Jan",
-            y: 450000,
+            x: "14 Feb",
+            y: 600000,
             marker: {
               size: 8,
               fillColor: "#fff",
@@ -158,7 +154,7 @@ const Chart = () => {
                 background: "#FF4560",
               },
 
-              text: "Start Using Viral System",
+              text: "Started Using Viral System",
             },
           },
         ],
