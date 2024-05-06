@@ -3,18 +3,6 @@ import React, { useEffect, useState } from "react";
 import ReactApexChart from "react-apexcharts";
 
 const Chart = () => {
-  const [isReactApexChartLoaded, setReactApexChartLoaded] = useState(false);
-
-  useEffect(() => {
-    import("react-apexcharts")
-      .then((module) => {
-        setReactApexChartLoaded(true);
-      })
-      .catch((error) =>
-        console.error("Error importing ReactApexChart:", error)
-      );
-  }, []);
-
   const state = {
     series: [
       {
@@ -167,14 +155,12 @@ const Chart = () => {
   return (
     <div className="text-black max-w-6xl mx-auto">
       <div id="chart">
-        {isReactApexChartLoaded && (
-          <ReactApexChart
-            options={state.options}
-            series={state.series}
-            type="line"
-            height={350}
-          />
-        )}
+        <ReactApexChart
+          options={state.options}
+          series={state.series}
+          type="line"
+          height={350}
+        />
       </div>
       <div id="html-dist"></div>
     </div>
