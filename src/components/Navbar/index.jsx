@@ -7,20 +7,20 @@ import MenuLinks from "./MenuLinks";
 function Navbar() {
   const [isGlassy, setIsGlassy] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const glassyThreshold = 50;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollPosition = window.scrollY;
+  //     const glassyThreshold = 50;
 
-      setIsGlassy(scrollPosition > glassyThreshold);
-    };
+  //     setIsGlassy(scrollPosition > glassyThreshold);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <div
