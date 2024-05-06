@@ -18,7 +18,10 @@ export default function Home() {
       <Followers />
       <Testimonials />
       <Videos />
-      <div id="book">
+      <div className="pt-10" id="book">
+        <div className="mb-5 text-center font-semibold text-lg md:text-xl">
+          Book Free Discovery Call
+        </div>
         <InlineWidget url="https://calendly.com/hazimehussein43" />
       </div>
     </div>
