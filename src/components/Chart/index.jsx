@@ -6,6 +6,8 @@ const Chart = () => {
   const [isReactApexChartLoaded, setReactApexChartLoaded] = useState(false);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
     import("react-apexcharts")
       .then((module) => {
         setReactApexChartLoaded(true);
@@ -15,7 +17,6 @@ const Chart = () => {
       );
   }, []);
 
-  // Ensure the component is only rendered on the client-side
   if (typeof window === "undefined") return null;
 
   const state = {

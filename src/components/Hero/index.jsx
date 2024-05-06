@@ -7,7 +7,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div
-      className="bg-cover bg-top bg-no-repeat pt-14 md:text-start text-center md:px-14 lg:px-20 px-5 flex justify-center items-center min-h-screen text-white"
+      className="bg-cover bg-top bg-no-repeat pt-20 md:pt-14 md:text-start text-center md:px-14 lg:px-20 px-5 flex justify-center items-center min-h-screen text-white"
       style={{
         backgroundImage: "url(/hero.png)",
       }}>
@@ -15,7 +15,7 @@ const Hero = () => {
 
       <div className="hero-content md:justify-between justify-center flex md:flex-row flex-col items-center w-full">
         <div className="">
-          <h1 className="fade-in mb-5 text-5xl font-bold ">
+          <h1 className="fade-in mb-5 text-3xl md:text-5xl font-bold ">
             Fouad El Boustani
           </h1>
           <p className="max-w-lg fade-in mb-5 text-sm md:text-base">
