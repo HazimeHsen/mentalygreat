@@ -21,10 +21,7 @@ const Chart = () => {
     series: [
       {
         name: "Session Duration",
-        data: [
-          120000, 170000, 250000, 300000, 400000, 600000, 1000000, 2000000,
-          2300000,
-        ],
+        data: [1000, 2000, 3000, 4000, 6000, 8000, 1000000, 2000000, 2300000],
       },
     ],
     options: {
@@ -75,6 +72,17 @@ const Chart = () => {
           "02 Apr",
           "06 May",
         ],
+      },
+      yaxis: {
+        labels: {
+          formatter: function (val) {
+            return val >= 1000000
+              ? `${val / 1000000}M`
+              : val >= 1000
+              ? `${val / 1000}k`
+              : val;
+          },
+        },
       },
       tooltip: {
         y: [

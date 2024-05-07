@@ -41,7 +41,9 @@ export default function Home() {
         </div>
         <Bg />
       </div>
-      <div className="text-center mt-10 capitalize md:-mb-10 mb-3 font-semibold text-lg md:text-xl">
+      <div
+        id="book"
+        className="text-center mt-10 capitalize md:-mb-10 mb-3 font-semibold text-lg md:text-xl">
         Book a free-15m discovery call{" "}
       </div>
       <div className="bg-white">
