@@ -17,16 +17,16 @@ export default function Home() {
       <div className="z-50 relative">
         <Hero />
       </div>
+      <div className="relative">
+        <Followers />
+        {/* <Bg /> */}
+      </div>
       <Bg />
       <div className="relative">
         <div className="z-50 relative">
           <Services />
         </div>
         <Bg />
-      </div>
-      <div className="relative">
-        <Followers />
-        {/* <Bg /> */}
       </div>
       <div className="relative">
         <div className="z-50 relative">
@@ -41,11 +41,11 @@ export default function Home() {
         </div>
         <Bg />
       </div>
-      <div className="pt-10 relative max-h-screen overflow-hidden" id="book">
-        <div className="mb-5 text-center font-semibold text-lg md:text-xl">
-          Book Free Discovery Call
-        </div>
-        <InlineWidget url="https://calendly.com/hazimehussein43" />
+      <div className="text-center mt-10 capitalize md:-mb-10 mb-3 font-semibold text-lg md:text-xl">
+        Book a free-15m discovery call{" "}
+      </div>
+      <div className="bg-white">
+        <InlineWidget url="https://calendly.com/adyboustani/discovery-call" />
       </div>
     </div>
   );

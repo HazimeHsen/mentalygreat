@@ -16,19 +16,22 @@ const Hero = () => {
       <div className="hero-content md:justify-between justify-center md:relative md:top-0 md:left-0 absolute top-56 left-0 flex md:flex-row flex-col items-center w-full">
         <div className="">
           <h1 className="fade-in mb-5 text-3xl md:text-5xl font-bold ">
-            Fouad El Boustani
+            Creating Viral Videos
           </h1>
           <p className="max-w-lg fade-in mb-5 text-sm md:text-base">
-            Hey, I’m Fouad, and I’ve grown my self-development community from 0
-            to 2.3 million followers organically in just 2 years (on TikTok and
-            Instagram). Applying the same proven system, we’ve helped over 10+
-            clients grow their authority by 50,000 to 100,000 followers in 4-12
-            months, helping their unique expertise, impact millions! (and
-            through that, they were able to make 100,000’s of $ in the process).
-            I usually hate bragging, but I’m doing this, to prove a point, what
-            we do works. We deliver viral results, using a proven system, that
-            create viral short-form videos.
+            Hey, I’m Fouad! In February 2021, I set a big bold goal: inspire 1
+            million followers in 12 months. I had 8,000 followers at the time.
+            But I said to myself: {'"'}You can{"'"}t miss out on this huge
+            opportunity{'"'}. So I obsessed, learned the viral strategy, and
+            organically grew @mentallygreat from 8k to 1 million followers in
+            just 2 months! Today, we{"'"}re at 2.3 million followers (+ IG), and
+            helping you grow faster!
           </p>
+          <div className="mb-3 fade-in">
+            <a href="#book" className="rounded-full btn btn-primary text-white">
+              Book free 15m discovery call
+            </a>
+          </div>
           <div className="flex fade-in md:justify-start justify-center items-center gap-2">
             <Link
               href="https://www.tiktok.com/@mentallygreat?_t=8m84R6SfZCR&_r=1"

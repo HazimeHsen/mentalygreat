@@ -30,6 +30,9 @@ const Followers = () => {
         variants={variants}
         transition={{ duration: 0.5 }}
         ref={chartRef}>
+        <h2 className="text-2xl leading-normal text-center mb-10 capitalize font-bold">
+          After using the viral strategy{" "}
+        </h2>
         <Chart />
       </motion.div>
     </div>

@@ -40,25 +40,25 @@ const Services = () => {
           variants={variants}
           transition={{ duration: 0.5 }}
           className="text-center mx-auto mb-12 lg:px-20">
-          <h2 className="text-2xl leading-normal mb-2 font-bold">
-            What We Offer
+          <h2 className="text-2xl leading-normal capitalize mb-2 font-bold">
+            What we guarantee{" "}
           </h2>
           <p className="text-gray-400 leading-relaxed font-light text-xl mx-auto pb-2">
-            We take care of the A-Z in creating your viral videos, you’ll just
-            need to film.
+            Your viral videos, will be fully taken care of, from ideation to
+            release. All you’ll need to do is film.{" "}
           </p>
         </motion.div>
-        <div className="flex flex-wrap justify-center flex-row text-center">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5 grid-cols-1 text-center">
           <motion.div
             ref={ref1}
-            className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6"
+            className="h-full block max-w-full w-full"
             initial="hidden"
             animate={inView1 ? "visible" : "hidden"}
             variants={variants}
             transition={{ duration: 0.5 }}>
-            <div className="py-8 px-12 mb-12 bg-gray-50/60 border-2 border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 rounded-xl shadow-lg ">
+            <div className="py-8 px-12 h-full bg-gray-50 border-2 border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 rounded-xl shadow-lg">
               <div className="inline-block text-gray-900 mb-4">
-                <div className="p-2 rounded-full border bg-gray-100">
+                <div className="p-2 rounded-full">
                   <Image alt="" src={"/icon-1.gif"} width={50} height={50} />
                 </div>{" "}
               </div>
@@ -73,15 +73,15 @@ const Services = () => {
           </motion.div>
           <motion.div
             ref={ref2}
-            className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6"
+            className="h-full block max-w-full w-full"
             initial="hidden"
             animate={inView2 ? "visible" : "hidden"}
             variants={variants}
             transition={{ duration: 0.5 }}>
-            <div className="py-8 px-12 mb-12 bg-gray-50/60 border-2 border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 rounded-xl shadow-lg ">
+            <div className="py-8 px-12 h-full bg-gray-50 border-2 border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 rounded-xl shadow-lg ">
               <div className="inline-block text-gray-900 mb-4">
-                <div className="p-2 rounded-full border bg-gray-100">
-                  <Image alt="" src={"/icon-2.gif"} width={50} height={50} />
+                <div className="p-2 rounded-full">
+                  <Image alt="" src={"/icon-2.png"} width={50} height={50} />
                 </div>
               </div>
               <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
@@ -95,15 +95,15 @@ const Services = () => {
           </motion.div>
           <motion.div
             ref={ref3}
-            className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6"
+            className="h-full block max-w-full w-full"
             initial="hidden"
             animate={inView3 ? "visible" : "hidden"}
             variants={variants}
             transition={{ duration: 0.5 }}>
-            <div className="py-8 px-12 mb-12 bg-gray-50/60 border-2 border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 rounded-xl shadow-lg ">
+            <div className="py-8 px-12 h-full bg-gray-50 border-2 border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 rounded-xl shadow-lg ">
               <div className="inline-block text-gray-900 mb-4">
-                <div className="p-2 rounded-full border bg-gray-100">
-                  <Image alt="" src={"/icon-3.gif"} width={50} height={50} />
+                <div className="p-2 rounded-full">
+                  <Image alt="" src={"/icon-3.png"} width={50} height={50} />
                 </div>
               </div>
               <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
@@ -116,15 +116,22 @@ const Services = () => {
           </motion.div>
           <motion.div
             ref={ref5}
-            className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6"
+            className="h-full max-w-full w-full lg:block hidden"
+            initial="hidden"
+            animate={inView5 ? "visible" : "hidden"}
+            variants={variants}
+            transition={{ duration: 0.5 }}></motion.div>
+          <motion.div
+            ref={ref5}
+            className="h-full block max-w-full w-full"
             initial="hidden"
             animate={inView5 ? "visible" : "hidden"}
             variants={variants}
             transition={{ duration: 0.5 }}>
-            <div className="py-8 px-12 mb-12 bg-gray-50/60 border-2 border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 rounded-xl shadow-lg ">
+            <div className="py-8 px-12 h-full bg-gray-50 border-2 border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 rounded-xl shadow-lg ">
               <div className="inline-block text-gray-900 mb-4">
-                <div className="p-2 rounded-full border bg-gray-100">
-                  <Image alt="" src={"/icon-4.gif"} width={50} height={50} />
+                <div className="p-2 rounded-full">
+                  <Image alt="" src={"/icon-4.png"} width={50} height={50} />
                 </div>
               </div>
               <h3 className="text-lg leading-normal mb-2 font-semibold text-black">

@@ -24,7 +24,9 @@ const Videos = () => {
 
   return (
     <div id="protfolio" className="container mx-auto py-10">
-      <h2 className="text-3xl font-bold mb-8 text-center">Portfolio</h2>
+      <h2 className="text-2xl leading-normal mb-10 text-center capitalize font-bold">
+        Viral videos we’ve created{" "}
+      </h2>
       <div className="flex justify-evenly flex-wrap gap-5">
         <motion.div
           ref={ref1}
