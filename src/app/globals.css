@@ -7,6 +7,12 @@ html {
   font-family: sans-serif;
 }
 
+@font-face {
+  font-family: 'Verdana';
+  src: url('/Verdana.ttf') format('truetype');
+}
+
+
 body {
   margin: 0;
 }
