@@ -16,12 +16,12 @@ const Hero = () => {
 
       <div className="hero-content md:justify-between justify-center md:relative md:top-0 md:left-0 absolute top-64 left-0 flex md:flex-row flex-col items-center w-full">
         <div className="">
-          <h1 className="fade-in mb-5 text-3xl md:text-5xl font-bold verdana-font">
+          <h1 className="fade-in mb-3 text-3xl md:text-5xl font-bold verdana-font">
             Creating Viral Videos
           </h1>
           <p
             style={{ fontFamily: "Verdana", fontWeight: "bold" }}
-            className="max-w-lg fade-in mb-5 text-sm md:text-base ">
+            className="max-w-lg fade-in mb-10 md:px-0 px-4 md:mb-5 text-xs md:text-base ">
             Hey, I’m Fouad! In February 2021, I set a big bold goal: inspire 1
             million followers in 12 months. I had 8,000 followers at the time.
             But I said to myself: {'"'}You can{"'"}t miss out on this huge
@@ -31,7 +31,9 @@ const Hero = () => {
             helping you grow faster!
           </p>
           <div className="mb-3 fade-in">
-            <a href="#book" className="rounded-full btn btn-primary text-white">
+            <a
+              href="#book"
+              className="rounded-full btn shadow-md shadow-gray-400 btn-primary text-white">
               Book free 15m discovery call
             </a>
           </div>
@@ -39,19 +41,19 @@ const Hero = () => {
             <Link
               href="https://www.tiktok.com/@mentallygreat?_t=8m84R6SfZCR&_r=1"
               target="_blank"
-              className="btn btn-circle">
+              className="btn btn-circle shadow-md shadow-gray-400">
               <FaTiktok size={20} />
             </Link>
             <Link
               href="https://www.instagram.com/mentallygreat?igsh=aWk1OGY4bWg0ZnIx"
               target="_blank"
-              className="btn btn-circle">
+              className="btn btn-circle shadow-md shadow-gray-400">
               <FaInstagram size={20} />
             </Link>
             <Link
               href="https://youtube.com/@mentallygreat?si=-Zf5LaYgvjiiBfaH"
               target="_blank"
-              className="btn btn-circle">
+              className="btn btn-circle shadow-md shadow-gray-400">
               <FaYoutube size={20} />
             </Link>
           </div>
