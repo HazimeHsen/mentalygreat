@@ -32,7 +32,7 @@ const Hero = () => {
           </p>
           <p
             style={{ fontFamily: "Verdana", fontWeight: "bold" }}
-            className="max-w-lg fade-in mb-10 md:mb-5 text-xs md:text-base bg-yellow-500/30 p-1 ">
+            className="max-w-lg fade-in mb-10 md:mb-5 text-xs md:text-base bg-gray-500/70 p-1 ">
             Today, we{"'"}re at 2.3 million followers (+ IG), and helping
             educational creators like you grow their online credibility faster
             and smarter.
@@ -40,7 +40,7 @@ const Hero = () => {
           <div className="mb-3 fade-in">
             <a
               href="#book"
-              className="rounded-full btn shadow-md shadow-gray-400 btn-primary text-white">
+              className="rounded-full btn shadow-md shadow-gray-600 btn-primary text-white">
               Book free 15m discovery call
             </a>
           </div>
@@ -48,19 +48,19 @@ const Hero = () => {
             <Link
               href="https://www.tiktok.com/@mentallygreat?_t=8m84R6SfZCR&_r=1"
               target="_blank"
-              className="btn btn-circle shadow-md shadow-gray-400">
+              className="btn btn-circle shadow-md shadow-gray-600">
               <FaTiktok size={20} />
             </Link>
             <Link
               href="https://www.instagram.com/mentallygreat?igsh=aWk1OGY4bWg0ZnIx"
               target="_blank"
-              className="btn btn-circle shadow-md shadow-gray-400">
+              className="btn btn-circle shadow-md shadow-gray-600">
               <FaInstagram size={20} />
             </Link>
             <Link
               href="https://youtube.com/@mentallygreat?si=-Zf5LaYgvjiiBfaH"
               target="_blank"
-              className="btn btn-circle shadow-md shadow-gray-400">
+              className="btn btn-circle shadow-md shadow-gray-600">
               <FaYoutube size={20} />
             </Link>
           </div>
