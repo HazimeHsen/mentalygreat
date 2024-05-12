@@ -138,7 +138,7 @@ const Services = () => {
                 Social media management{" "}
               </h3>
               <p className="text-gray-500">
-                Save yourelf the headache, our team will manage all posting,
+                Save yourself the headache, our team will manage all posting,
                 titles, hashtags, etc …{" "}
               </p>
             </div>
