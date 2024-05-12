@@ -38,7 +38,7 @@ const Testimonials = () => {
         <h2 className="text-2xl leading-normal mb-2 text-center capitalize font-bold">
           Proof of our viral results.{" "}
         </h2>
-        <p className="text-gray-400 md:text-sm mb-10 text-xs leading-relaxed font-light text-center max-w-xl mx-auto pb-2">
+        <p className="text-gray-400 mb-10 text-sm md:text-base leading-relaxed font-light text-center max-w-xl mx-auto pb-2">
           Today, applying the same viral strategy (upgraded), we’ve helped over
           10+ clients grow their authority by 50,000 to 100,000 followers in
           just 4-12 months. Thus, helping their unique message impact millions!
@@ -241,15 +241,27 @@ const Testimonials = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="community-size text---no-wrap scale-90 ben  mt-1 -ml-2 ">
-                  <Link
-                    target="_blank"
-                    className="flex items-center gap-1"
-                    href={
-                      "https://www.tiktok.com/@amireidofficial?_t=8m83WVtEceW&_r=1"
-                    }>
-                    <FaTiktok size={20} /> <span>TikTok</span>
-                  </Link>
+                <div className="flex flex-col md:flex-row gap-2 items-center">
+                  <div className="community-size text---no-wrap scale-90 ben  mt-1 -ml-2 ">
+                    <Link
+                      target="_blank"
+                      className="flex items-center gap-1"
+                      href={
+                        "https://www.tiktok.com/@amireidofficial?_t=8m83WVtEceW&_r=1"
+                      }>
+                      <FaTiktok size={20} /> <span>TikTok</span>
+                    </Link>
+                  </div>
+                  <div className="community-size text---no-wrap scale-90 ben  mt-1 -ml-2 ">
+                    <Link
+                      target="_blank"
+                      className="flex items-center gap-1"
+                      href={
+                        "https://www.instagram.com/amireidofficial?igsh=MWdqN3JjemtpNjFiYg=="
+                      }>
+                      <FaInstagram size={20} /> <span>Instagram</span>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

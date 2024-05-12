@@ -41,7 +41,7 @@ const Videos = () => {
               <div className="h-[500px] relative">
                 {inView1 && (
                   <iframe
-                    src="https://www.instagram.com/reel/CpLHsK6jpIh/embed/"
+                    src="https://www.instagram.com/reel/Co5Hii_Dl_6/embed/"
                     title="Instagram Video"
                     width="100%"
                     height="100%"
@@ -97,22 +97,22 @@ const Videos = () => {
             <div className="camera"></div>
             <div className="display">
               <div className="h-[500px] relative">
-                <video
-                  src="/tik.mp4"
-                  title="TikTok Video"
-                  width="100%"
-                  height="100%"
-                  autoPlay={false}
-                  className="w-full"
-                  frameBorder="0"
-                  scrolling="no"
-                  controls></video>
+                {inView3 && (
+                  <iframe
+                    src="https://www.instagram.com/reel/CzTjS62oybj/embed/"
+                    title="Instagram Video"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    scrolling="no"
+                    allowFullScreen></iframe>
+                )}
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-2 text-sm font-bold bg-gray-100 text-gray-500 px-4 py-2 rounded-full">
+          <div className="flex items-center gap-3 text-sm font-bold bg-gray-100 text-gray-500 px-4 py-2 rounded-full">
             <FaEye />
-            <span className="text-xs">900k Views</span>
+            <span className="text-xs">100k Views</span>
           </div>
         </motion.div>
       </div>

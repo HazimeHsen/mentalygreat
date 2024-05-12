@@ -4005,7 +4005,10 @@ a {
 }
 
 .text-colour---orange {
-  color: #0863c4;
+  background: linear-gradient(45deg, #79B7E7 0%, #4F46E5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .testimonial-arrow {
@@ -6292,6 +6295,9 @@ a {
 }
 .fade-in:nth-child(4) {
   animation-delay: 0.8s;
+}
+.fade-in:nth-child(5) {
+  animation-delay: 1s;
 }
 
 .fade-in-phone{

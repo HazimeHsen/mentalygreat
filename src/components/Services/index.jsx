@@ -59,7 +59,7 @@ const Services = () => {
             <div className="py-8 px-12 h-full bg-gray-50 border-2 border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 rounded-xl shadow-lg">
               <div className="inline-block text-gray-900 mb-4">
                 <div className="p-2 rounded-full">
-                  <Image alt="" src={"/icon-1.gif"} width={50} height={50} />
+                  <Image alt="" src={"/icon-1.png"} width={50} height={50} />
                 </div>{" "}
               </div>
               <h3 className="text-lg leading-normal mb-2 font-semibold text-black">

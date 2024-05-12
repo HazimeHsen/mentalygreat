@@ -24,12 +24,6 @@ export default function Home() {
       <Bg />
       <div className="relative">
         <div className="z-50 relative">
-          <Services />
-        </div>
-        <Bg />
-      </div>
-      <div className="relative">
-        <div className="z-50 relative">
           <Testimonials />
         </div>
 
@@ -38,6 +32,12 @@ export default function Home() {
       <div className="relative">
         <div className="z-50 relative">
           <Videos />
+        </div>
+        <Bg />
+      </div>
+      <div className="relative">
+        <div className="z-50 relative">
+          <Services />
         </div>
         <Bg />
       </div>

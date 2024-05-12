@@ -21,7 +21,7 @@ const Hero = () => {
           </h1>
           <p
             style={{ fontFamily: "Verdana", fontWeight: "bold" }}
-            className="max-w-lg fade-in mb-10 md:px-0 px-4 md:mb-5 text-xs md:text-base ">
+            className="max-w-lg fade-in mb-2 md:px-0 px-4 md:mb-5 text-xs md:text-base ">
             Hey, I’m Fouad! In February 2021, I set a big bold goal: inspire 1
             million followers in 12 months. I had 8,000 followers at the time.
             But I said to myself: {'"'}You can{"'"}t miss out on this huge
@@ -29,6 +29,13 @@ const Hero = () => {
             organically grew @mentallygreat from 8k to 1 million followers in
             just 2 months! Today, we{"'"}re at 2.3 million followers (+ IG), and
             helping you grow faster!
+          </p>
+          <p
+            style={{ fontFamily: "Verdana", fontWeight: "bold" }}
+            className="max-w-lg fade-in mb-10 md:mb-5 text-xs md:text-base bg-yellow-500/30 p-1 ">
+            Today, we{"'"}re at 2.3 million followers (+ IG), and helping
+            educational creators like you grow their online credibility faster
+            and smarter.
           </p>
           <div className="mb-3 fade-in">
             <a
