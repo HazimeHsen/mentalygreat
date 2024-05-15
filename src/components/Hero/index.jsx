@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="hero-content md:justify-between justify-center md:relative md:top-0 md:left-0 absolute top-64 left-0 flex md:flex-row flex-col items-center w-full">
         <div className="">
           <h1 className="fade-in mb-3 text-3xl md:text-5xl font-bold verdana-font">
-          Creating viral educators.
+          Creating Viral Educators
           </h1>
           <p
             style={{ fontFamily: "Verdana", fontWeight: "bold" }}
