@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="hero-content md:justify-between justify-center md:relative md:top-0 md:left-0 absolute top-64 left-0 flex md:flex-row flex-col items-center w-full">
         <div className="">
           <h1 className="fade-in mb-3 text-3xl md:text-5xl font-bold verdana-font">
-            Creating Viral Videos
+          Creating viral educators.
           </h1>
           <p
             style={{ fontFamily: "Verdana", fontWeight: "bold" }}
@@ -30,13 +30,7 @@ const Hero = () => {
             just 2 months! Today, we{"'"}re at 2.3 million followers (+ IG), and
             helping you grow faster!
           </p>
-          <p
-            style={{ fontFamily: "Verdana", fontWeight: "bold" }}
-            className="max-w-lg fade-in mb-10 md:mb-5 text-xs md:text-base bg-gray-500/70 p-1 ">
-            Today, we{"'"}re at 2.3 million followers (+ IG), and helping
-            educational creators like you grow their online credibility faster
-            and smarter.
-          </p>
+   
           <div className="mb-3 fade-in">
             <a
               href="#book"

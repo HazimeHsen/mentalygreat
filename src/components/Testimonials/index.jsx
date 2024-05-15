@@ -223,7 +223,7 @@ const Testimonials = () => {
                   </div>
                   <div className="verified-name-wrapper">
                     <div className="caption---xxsmall opacity---80">
-                      @disisjorj
+                      @amireidofficial
                     </div>
                     <svg
                       className="verified-icon"
@@ -341,7 +341,7 @@ const Testimonials = () => {
                   </div>
                   <div className="verified-name-wrapper">
                     <div className="caption---xxsmall opacity---80">
-                      @disisjorj
+                      @sarah_atcho
                     </div>
                     <svg
                       className="verified-icon"
