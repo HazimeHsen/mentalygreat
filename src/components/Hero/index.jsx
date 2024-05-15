@@ -27,10 +27,15 @@ const Hero = () => {
             But I said to myself: {'"'}You can{"'"}t miss out on this huge
             opportunity{'"'}. So I obsessed, learned the viral strategy, and
             organically grew @mentallygreat from 8k to 1 million followers in
-            just 2 months! Today, we{"'"}re at 2.3 million followers (+ IG), and
-            helping you grow faster!
+            just 2 months! 
           </p>
-   
+          <p
+            style={{ fontFamily: "Verdana", fontWeight: "bold" }}
+            className="max-w-lg fade-in mb-10 md:mb-5 text-xs md:text-base bg-gray-500/70 p-1 ">
+            Today, we{"'"}re at 2.3 million followers (+ IG), and helping
+            educational creators like you grow their online credibility faster
+            and smarter.
+          </p>
           <div className="mb-3 fade-in">
             <a
               href="#book"
