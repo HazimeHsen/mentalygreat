@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="hero-content md:justify-between justify-center md:relative md:top-0 md:left-0 absolute top-64 left-0 flex md:flex-row flex-col items-center w-full">
         <div className="">
           <h1 className="fade-in mb-3 text-3xl md:text-5xl font-bold verdana-font">
-          Creating Viral Educators
+            Creating Viral Educators
           </h1>
           <p
             style={{ fontFamily: "Verdana", fontWeight: "bold" }}
@@ -27,7 +27,7 @@ const Hero = () => {
             But I said to myself: {'"'}You can{"'"}t miss out on this huge
             opportunity{'"'}. So I obsessed, learned the viral strategy, and
             organically grew @mentallygreat from 8k to 1 million followers in
-            just 2 months! 
+            just 2 months!
           </p>
           <p
             style={{ fontFamily: "Verdana", fontWeight: "bold" }}
@@ -64,7 +64,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="md:mt-0 mt-20">
+        <div className="">
           <Link
             href={"https://www.tiktok.com/@mentallygreat?_t=8m84R6SfZCR&_r=1"}
             className="fade-in-phone mockup-phone !m-0 min-w-[250px]">
